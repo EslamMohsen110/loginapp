@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:login/resourse/images_constants.dart';
+import 'package:login/widgets/custom_button.dart';
 import 'package:login/widgets/custom_image.dart';
 
 class LoginViewWidget extends StatelessWidget {
@@ -10,6 +11,7 @@ class LoginViewWidget extends StatelessWidget {
     return Column(
       children: [
         CustomImage(image: ImagesConstants.mOneImage),
+        CustomButton(title: 'Login')
       ],
     );
   }

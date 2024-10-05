@@ -10,8 +10,7 @@ class CustomText extends StatelessWidget {
   Widget build(BuildContext context) {
     return Text(
       title,
-      style: TextStyle(
-        color: ColorConstants.cPrimaryColor, fontSize: 17),
+      style: const TextStyle(color: ColorConstants.cPrimaryColor, fontSize: 17),
     );
   }
 }

@@ -8,11 +8,11 @@ class CustomImage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     double height = MediaQuery.of(context).size.height;
-    double width = MediaQuery.of(context).size.width;
-    return Image.asset(
-      image,
-      fit: BoxFit.cover,
-      height: height * 0.40,
-    );
+    return InkWell(
+        onTap: () {},
+        child: Image.asset(
+          image,
+          height: height * 0.37,
+        ));
   }
 }

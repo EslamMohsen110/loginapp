@@ -11,7 +11,7 @@ class CustomTextFormField extends StatelessWidget {
     return TextFormField(
       decoration: InputDecoration(
         hintText: title,
-        hintStyle: TextStyle(color: ColorConstants.cPrimaryColor),
+        hintStyle: const TextStyle(color: ColorConstants.cPrimaryColor),
         fillColor: ColorConstants.cPinkLightColor,
         filled: true,
         border: OutlineInputBorder(

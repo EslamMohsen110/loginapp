@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:login/resourse/images_constants.dart';
-import 'package:login/widgets/custom_image.dart';
+import 'package:login/widgets/custom_icon.dart';
 
 class MobileViewWidget extends StatelessWidget {
   const MobileViewWidget({super.key});
@@ -9,7 +9,7 @@ class MobileViewWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     return Column(
       children: [
-        CustomImage(image: ImagesConstants.mTwoImage),
+        CustomIcon(image: ImagesConstants.mTwoImage),
       ],
     );
   }

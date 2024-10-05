@@ -12,10 +12,10 @@ class LoginView extends StatelessWidget {
       backgroundColor: Colors.white,
       appBar: AppBar(
         backgroundColor: Colors.white,
-        title: CustomAppBar(title: TitleConstants.tLogin),
+        title: const CustomAppBar(title: TitleConstants.tLogin),
         centerTitle: true,
       ),
-      body: LoginViewWidget(),
+      body: const LoginViewWidget(),
     );
   }
 }

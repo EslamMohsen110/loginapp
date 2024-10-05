@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:login/resourse/images_constants.dart';
 import 'package:login/resourse/title_constants.dart';
+import 'package:login/view/account_created.dart';
 import 'package:login/widgets/custom_button.dart';
 import 'package:login/widgets/custom_icon.dart';
 import 'package:login/widgets/custom_image.dart';
@@ -12,19 +13,24 @@ class LoginViewWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Padding(
-      padding: EdgeInsets.symmetric(horizontal: 10),
+    return Padding(
+      padding: const EdgeInsets.symmetric(horizontal: 10),
       child: SingleChildScrollView(
         child: Column(
           children: [
-            CustomImage(image: ImagesConstants.mOneImage),
-            CustomTextFormField(title: TitleConstants.tPhoneNumber),
-            SizedBox(height: 28),
-            CustomButton(title: 'Login'),
-            SizedBox(height: 28),
-            CustomText(title: TitleConstants.tORLoginWith),
-            SizedBox(height: 15),
-            Row(
+            const CustomImage(image: ImagesConstants.mOneImage),
+            const CustomTextFormField(title: TitleConstants.tPhoneNumber),
+            const SizedBox(height: 28),
+            CustomButton(
+              title: TitleConstants.tLogin,
+              onPressed: () {
+                Navigator.of(context).pushNamed(AccountCreated.routeName);
+              },
+            ),
+            const SizedBox(height: 28),
+            const CustomText(title: TitleConstants.tORLoginWith),
+            const SizedBox(height: 15),
+            const Row(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 CustomIcon(image: ImagesConstants.mFaceBookImage),
@@ -34,8 +40,8 @@ class LoginViewWidget extends StatelessWidget {
                 CustomIcon(image: ImagesConstants.mTwitterImage),
               ],
             ),
-            SizedBox(height: 15),
-            Row(
+            const SizedBox(height: 15),
+            const Row(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 CustomText(title: TitleConstants.tDontHaveAnAccount),

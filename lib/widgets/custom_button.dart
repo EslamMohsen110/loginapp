@@ -2,9 +2,10 @@ import 'package:flutter/material.dart';
 import 'package:login/resourse/color_constants.dart';
 
 class CustomButton extends StatelessWidget {
-  const CustomButton({super.key, required this.title});
+  const CustomButton({super.key, required this.title, required this.onPressed});
 
   final String title;
+  final void Function() onPressed;
 
   @override
   Widget build(BuildContext context) {
@@ -17,7 +18,7 @@ class CustomButton extends StatelessWidget {
         style: ElevatedButton.styleFrom(
           backgroundColor: ColorConstants.cPrimaryColor,
         ),
-        onPressed: () {},
+        onPressed: onPressed,
         child: Text(
           title,
           style: const TextStyle(

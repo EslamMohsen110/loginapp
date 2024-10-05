@@ -11,6 +11,7 @@ class TitleConstants {
   static const String tVerify = "Verify";
   static const String tCompleteProfile = "Complete Profile";
   static const String tSkip = "Skip";
+  static const String tNok = "-------------";
   static const String tEnterthethe5digit =
       "Enter the the 5 digit number sent to\nthis phone number: 01093499817";
   static const String tCompleteyourprofile =

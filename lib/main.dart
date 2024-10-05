@@ -13,7 +13,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      initialRoute: MobileNumberVerificationView.routeName,
+      initialRoute: LoginView.routeName,
       routes: {
         LoginView.routeName: (context) => const LoginView(),
         AccountCreated.routeName: (context) => const AccountCreated(),

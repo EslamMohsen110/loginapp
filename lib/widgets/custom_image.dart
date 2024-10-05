@@ -12,6 +12,7 @@ class CustomImage extends StatelessWidget {
     return Image.asset(
       image,
       fit: BoxFit.cover,
+      height: height * 0.40,
     );
   }
 }

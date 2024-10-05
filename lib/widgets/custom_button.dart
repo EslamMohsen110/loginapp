@@ -12,15 +12,19 @@ class CustomButton extends StatelessWidget {
     double width = MediaQuery.of(context).size.width;
     return Container(
       width: width,
-      height: height * 0.05,
+      height: height * 0.07,
       child: ElevatedButton(
         style: ElevatedButton.styleFrom(
-          backgroundColor: ColorConstants().cPrimaryColor,
+          backgroundColor: ColorConstants.cPrimaryColor,
         ),
         onPressed: () {},
         child: Text(
           title,
-          style: TextStyle(color: Colors.white, fontSize: 15),
+          style: TextStyle(
+            color: Colors.white,
+            fontSize: 17,
+            fontWeight: FontWeight.bold,
+          ),
         ),
       ),
     );

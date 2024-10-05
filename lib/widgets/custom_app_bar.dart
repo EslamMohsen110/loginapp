@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:login/resourse/color_constants.dart';
 
-class CustomText extends StatelessWidget {
-  const CustomText({super.key, required this.title});
+class CustomAppBar extends StatelessWidget {
+  const CustomAppBar({super.key, required this.title});
 
   final String title;
 
@@ -11,7 +11,9 @@ class CustomText extends StatelessWidget {
     return Text(
       title,
       style: TextStyle(
-        color: ColorConstants.cPrimaryColor, fontSize: 17),
+          color: ColorConstants.cPrimaryColor,
+          fontSize: 22,
+          fontWeight: FontWeight.bold),
     );
   }
 }

@@ -5,7 +5,8 @@ class TitleConstants {
   static const String tPhoneNumber = 'Phone Number';
   static const String tHiThere = 'Hi There';
   static const String tORLoginWith = 'OR Login with';
-  static const String tDontHaveAnAccount = "Don't have an account? Sign up";
+  static const String tDontHaveAnAccount = "Don't have an account?";
+  static const String tSignup = "Sign up";
   static const String tResendCode = "Resend Code";
   static const String tVerify = "Verify";
   static const String tCompleteProfile = "Complete Profile";
